@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1536" height="2048" viewBox="0 0 1536 2048">
+  <defs><clipPath id="canvas-clip"><rect width="1536" height="2048"/></clipPath></defs>
+  <g id="background" data-layer-type="raster" data-bounds="0,0,1536,2048" clip-path="url(#canvas-clip)"/>
+  <g id="overlay" data-layer-type="shape" data-bounds="0,0,1536,2048"/>
+  <g id="subject" data-layer-type="raster" data-bounds="768,500,680,1400"/>
+  <g id="title" data-layer-type="text" data-bounds="96,180,1200,360"/>
+  <g id="subtitle" data-layer-type="text" data-bounds="100,560,1100,160"/>
+  <g id="body" data-layer-type="text" data-bounds="100,820,900,700"/>
+  <g id="metadata" data-layer-type="text" data-bounds="100,1720,1336,220"/>
+</svg>
+

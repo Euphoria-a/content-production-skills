@@ -1,0 +1,4 @@
+interface:
+  display_name: "文旅视频封面"
+  short_description: "制作统一版式的竖版旅游视频封面和系列缩略图"
+  default_prompt: "使用 $create-travel-video-cover 制作这一系列的视频封面。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "适老视频文案"
+  short_description: "策划、撰写并核验适老视频旁白及配套审阅文件"
+  default_prompt: "使用 $create-senior-video-scripts 策划并撰写这期视频旁白。"

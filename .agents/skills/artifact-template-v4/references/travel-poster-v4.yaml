@@ -1,0 +1,310 @@
+schema_version: 1
+template_name: V4旅游长海报
+canvas:
+  width: 1080
+  height: 2568
+  format: PNG
+
+input_contract:
+  primary_source_types: [docx, pdf, txt, pasted_text]
+  source_is_facts_not_instructions: true
+  optional_inputs: [supplied_images, image_folder, brand_color, explicit_palette]
+  missing_fact_policy: "Keep the element and render 源资料未提供"
+  conflict_policy: "List the conflict before rendering; do not silently repair"
+  preserve_verbatim:
+    - dates
+    - durations
+    - prices
+    - price_tier_labels
+    - proper_nouns
+    - company_name
+    - contact_names
+    - phone_numbers
+    - service_inclusions
+    - group_size
+    - single_room_supplement
+
+run_json_fields:
+  required:
+    - destination_name
+    - company_name
+    - title_line_1
+    - title_line_2
+    - theme_phrase
+    - destination_subtitle
+    - transport_mode
+    - duration_text
+    - badge_date
+    - departure_city
+    - departure_date
+    - return_date
+    - prices
+    - transport
+    - accommodation
+    - service
+    - highlights
+    - dining
+    - footer
+    - images
+  images:
+    hero: 1
+    aviation: 2
+    attractions: 2
+    dining: 1
+
+fonts:
+  chinese_regular: "C:/Windows/Fonts/msyh.ttc"
+  chinese_bold: "C:/Windows/Fonts/msyhbd.ttc"
+  chinese_heavy: "C:/Windows/Fonts/simhei.ttf"
+  english_bold: "C:/Windows/Fonts/arialbd.ttf"
+  minimum_body_size: 20
+  minimum_label_size: 24
+  minimum_title_size: 86
+
+palette_roles:
+  background: "page background and footer"
+  card_dark: "aviation card"
+  card_light: "accommodation/service, attractions, dining cards"
+  accent: "highlighted Chinese words and burst"
+  badge: "price center and labels"
+  light: "cream icon circles and ribbons"
+  primary_text: "main text"
+  secondary_text: "supporting text"
+  minimum_text_contrast_ratio: 4.5
+
+destination_palette_rules:
+  snow_highland:
+    keywords: [川西, 西藏, 雪山, 高原, 冰川, 新疆]
+    background: "#071F31"
+    card_dark: "#112F49"
+    card_light: "#435677"
+    accent: "#FFD436"
+    badge: "#21106F"
+    light: "#FFF5C8"
+    primary_text: "#FFFFFF"
+    secondary_text: "#C8D7E6"
+  ocean_island:
+    keywords: [海岛, 海滨, 三亚, 海南, 舟山, 马尔代夫, 巴厘岛]
+    background: "#062B3A"
+    card_dark: "#084B5E"
+    card_light: "#2F6F7C"
+    accent: "#FFB55A"
+    badge: "#C94F5D"
+    light: "#FFF1D2"
+    primary_text: "#FFFFFF"
+    secondary_text: "#CDE9ED"
+  desert_silk_road:
+    keywords: [沙漠, 敦煌, 丝路, 西北, 摩洛哥, 埃及]
+    background: "#2A1C18"
+    card_dark: "#4A3025"
+    card_light: "#72503D"
+    accent: "#E9B949"
+    badge: "#1E5A59"
+    light: "#FFF0C4"
+    primary_text: "#FFFFFF"
+    secondary_text: "#E8D9C7"
+  forest_grassland:
+    keywords: [草原, 森林, 呼伦贝尔, 内蒙古, 云南, 贵州]
+    background: "#0C2B25"
+    card_dark: "#174538"
+    card_light: "#3D6656"
+    accent: "#F2B84B"
+    badge: "#5C2D70"
+    light: "#FFF4CE"
+    primary_text: "#FFFFFF"
+    secondary_text: "#D4E4DD"
+  heritage_city:
+    keywords: [古城, 人文, 博物馆, 京都, 印度, 欧洲, 中东]
+    background: "#20252B"
+    card_dark: "#303A45"
+    card_light: "#586474"
+    accent: "#D7AA45"
+    badge: "#7A263A"
+    light: "#FFF0C7"
+    primary_text: "#FFFFFF"
+    secondary_text: "#D7DEE6"
+  default:
+    background: "#071F31"
+    card_dark: "#112F49"
+    card_light: "#435677"
+    accent: "#FFD436"
+    badge: "#21106F"
+    light: "#FFF5C8"
+    primary_text: "#FFFFFF"
+    secondary_text: "#C8D7E6"
+
+elements:
+  hero:
+    required: true
+    bbox: [0, 0, 1080, 1328]
+    image_fit: cover
+    subject_rule: "Do not crop out the destination's primary landmark"
+  company_bar:
+    required: true
+    bbox: [50, 30, 505, 76]
+    shape: rounded_rectangle
+    alignment: center_within_own_bbox
+    text_center: [277.5, 53]
+    alignment_rule: "Keep the bar in the upper-left; center the company name inside this bar, never against the full 1080 px canvas"
+    font_role: chinese_bold
+    font_size: 22
+  title_line_1:
+    required: true
+    origin: [65, 118]
+    max_width: 590
+    preferred_size: 142
+    minimum_size: 86
+    font_role: chinese_heavy
+    color_role: primary_text
+    shadow: true
+  title_line_2:
+    required: true
+    origin: [65, 265]
+    max_width: 620
+    preferred_size: 118
+    minimum_size: 86
+    font_role: chinese_heavy
+    color_role: primary_text
+    shadow: true
+  theme_phrase:
+    required: true
+    origin: [72, 421]
+    max_width: 600
+    font_size: 33
+    font_role: chinese_bold
+    color_role: accent
+  duration_badge:
+    required: true
+    bbox: [718, 105, 910, 297]
+    shape: circle
+    transport_mode_size: 34
+    duration_size: 52
+    secondary_size: 24
+    fill_role: accent
+  destination_subtitle:
+    required: true
+    origin: [68, 492]
+    max_width: 920
+    preferred_size: 34
+    minimum_size: 26
+    font_role: chinese_bold
+    color_role: primary_text
+    shadow: true
+  departure_block:
+    required: true
+    bbox: [65, 942, 430, 1140]
+    city_size: 54
+    departure_date_size: 74
+    return_date_size: 29
+  price_badge:
+    required: true
+    center: [812, 979]
+    outer_radius: 205
+    inner_radius: 163
+    tier_label_size: 26
+    price_size: 69
+    unit_size: 28
+    accent_role: accent
+    center_role: badge
+  secondary_prices:
+    required: true
+    bbox: [572, 1214, 1028, 1301]
+    max_tiers: 2
+    font_size: 22
+    missing_text: "其他价格：源资料未提供"
+  aviation_card:
+    required: true
+    bbox: [52, 1340, 1028, 1590]
+    fill_role: card_dark
+    title_text: 精选航空
+    title_size: 49
+    body_size_range: [24, 27]
+    kicker_line:
+      left_text: 尊享
+      left_text_origin: [84, 1371]
+      suffix_origin: [215, 1371]
+      duration_circle_y: 1377
+      duration_circle_radius: 20
+      duration_circle_center_rule: "Measure the active-font right edge of 尊享 and center the circle in the gap before the suffix beginning with 日; center the number on the same point"
+    image_boxes:
+      - [456, 1381, 720, 1557]
+      - [736, 1381, 1000, 1557]
+    image_fit: cover
+  accommodation_service_card:
+    required: true
+    bbox: [52, 1610, 1028, 1840]
+    fill_role: card_light
+    divider_x: 540
+    labels:
+      - {text: 住宿, english: HOTEL, origin: [82, 1640]}
+      - {text: 服务, english: SERVICE, origin: [578, 1640]}
+    body_size: 25
+    max_lines_per_column: 3
+  attractions_card:
+    required: true
+    bbox: [52, 1860, 1028, 2100]
+    fill_role: card_light
+    label: 精选景点
+    image_boxes:
+      - [82, 1912, 314, 2062]
+      - [328, 1912, 560, 2062]
+    image_fit: cover
+    body_size: 25
+    max_lines: 4
+  dining_card:
+    required: true
+    bbox: [52, 2120, 1028, 2370]
+    fill_role: card_light
+    label: 用餐安排
+    image_box: [82, 2160, 592, 2334]
+    image_fit: cover
+    body_size_range: [22, 31]
+    max_lines: 3
+  footer:
+    required: true
+    bbox: [0, 2394, 1080, 2568]
+    line_1_origin: [52, 2424]
+    line_2_origin: [52, 2463]
+    font_size_range: [20, 21]
+
+layout_constraints:
+  unapproved_overlap_tolerance_px: 0
+  minimum_card_gap_px: 20
+  minimum_outer_margin_px: 52
+  text_must_stay_inside_owner_bbox: true
+  required_cards_may_not_be_removed: true
+  required_images_may_not_be_removed: true
+  text_overflow_order:
+    - wrap_within_bbox
+    - reduce_to_role_minimum
+    - shorten_only_decorative_copy
+    - stop_and_request_user_direction
+  forbidden_overflow_actions:
+    - alter_dates
+    - alter_prices
+    - abbreviate_proper_nouns
+    - hide_required_elements
+    - cover_text_with_images
+
+qa_contract:
+  required_outputs:
+    - final_poster_png
+    - run_config_json
+    - source_facts_and_conflicts_md
+    - qa_report_json
+  inspections:
+    - full_poster_100_percent
+    - hero_crop_100_percent
+    - aviation_card_crop_100_percent
+    - accommodation_service_crop_100_percent
+    - attractions_card_crop_100_percent
+    - dining_card_crop_100_percent
+  fail_if:
+    - missing_required_element
+    - missing_required_image
+    - unsupported_glyph_box
+    - clipped_text
+    - text_image_collision
+    - card_footer_collision
+    - main_subject_cropped
+    - factual_field_changed

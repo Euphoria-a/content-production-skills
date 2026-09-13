@@ -1,0 +1,19 @@
+{
+  "series_name": "示例地区",
+  "output_root": "output",
+  "font": "path/to/your-authorized-font.otf",
+  "covers": [
+    {
+      "episode": 1,
+      "subtitle": "山水与人文",
+      "body": [
+        "沿着山路继续往前走，",
+        "来到河谷之间的村落，",
+        "看看风景怎样连着生活，",
+        "也读懂这片土地的日常。"
+      ],
+      "background": "work/episode-01/background-16x9.png",
+      "background_verified_no_text": true
+    }
+  ]
+}

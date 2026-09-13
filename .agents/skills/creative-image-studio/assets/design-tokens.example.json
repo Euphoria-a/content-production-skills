@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "colors": {
+    "gold_bright": "#d7b36a",
+    "gold_deep": "#a37b3c",
+    "ink": "#061a2b",
+    "light_text": "#f8f5e9"
+  },
+  "fonts": {
+    "title": "Noto Serif SC, Source Han Serif SC, Microsoft YaHei, serif",
+    "body": "Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif",
+    "latin": "Inter, Source Sans Pro, Calibri, sans-serif"
+  },
+  "spacing": {
+    "safe_margin_at_864": 40,
+    "subject_edge_at_864": 60,
+    "chapter_title_gap": 20
+  },
+  "overlay_alpha": {
+    "strong": 0.85,
+    "medium": 0.65,
+    "light": 0.35,
+    "fade": 0.18
+  },
+  "typography": {
+    "large_tracking_ratio": 0.08,
+    "title_line_height_ratio": 1.1,
+    "lead_line_height_ratio": 1.4,
+    "body_line_height_ratio": 1.5
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "default_provider": null,
+  "providers": {
+    "custom-provider": {
+      "enabled": false,
+      "base_url": "https://your-provider.example/v1",
+      "api_key_env": "IMAGE_STUDIO_API_KEY",
+      "auth_header": "Authorization",
+      "auth_prefix": "Bearer ",
+      "models": {"generate": "replace-with-generation-model", "edit": "replace-with-edit-model"},
+      "endpoints": {"generate": "/images/generations", "edit": "/images/edits"},
+      "capabilities": {"generate": true, "edit": false, "mask": false, "reference_images": false, "native_transparency": false, "seed": false, "n": true},
+      "mask_semantics": "white_edit",
+      "generation_defaults": {"output_format": "png"},
+      "edit_defaults": {}
+    }
+  }
+}

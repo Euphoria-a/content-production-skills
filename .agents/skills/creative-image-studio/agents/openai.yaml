@@ -1,0 +1,4 @@
+interface:
+  display_name: "创意文生图工作室"
+  short_description: "跨平台文生图、分层中文海报、局部重绘与精确文字排版"
+  default_prompt: "使用 $creative-image-studio，根据我的需求创建一份分层、可编辑、可验证的视觉作品。"

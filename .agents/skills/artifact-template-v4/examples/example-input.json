@@ -1,0 +1,41 @@
+{
+  "destination_name": "示例高原",
+  "company_name": "示例旅行服务机构（请替换）",
+  "title_line_1": "高原",
+  "title_line_2": "全景之旅",
+  "theme_phrase": "雪山 · 湖泊 · 地域人文",
+  "destination_subtitle": "示例景点甲 · 示例景点乙 · 示例景点丙",
+  "transport_mode": "双飞",
+  "duration_text": "14日",
+  "badge_date": "示例日期",
+  "departure_city": "示例城市出发",
+  "departure_date": "示例出发日",
+  "return_date": "示例返程日",
+  "prices": [
+    {"label": "价格档位甲", "amount": "8888", "unit": "元/人"},
+    {"label": "价格档位乙", "amount": "7777", "unit": "元/人"},
+    {"label": "价格档位丙", "amount": "6666", "unit": "元/人"}
+  ],
+  "transport": {
+    "title_prefix": "精选",
+    "title_suffix": "航空",
+    "kicker_number": "14",
+    "kicker_suffix": "日全景游",
+    "lines": ["示例城市往返飞机", "当地旅游用车"]
+  },
+  "accommodation": ["示例住宿标准", "双人标准间", "特色住宿一晚"],
+  "service": ["全程中文导游服务", "门票及景区交通按行程所列", "正餐50元/人标准"],
+  "highlights": ["示例景点甲、示例景点乙", "示例景点丙、示例景点丁", "示例文化体验", "示例自然景观"],
+  "dining": ["行程所列用餐", "正餐50元/人标准", "具体餐次以逐日行程为准"],
+  "footer": {
+    "line_1": "本文件仅为版式示例 · 所有行程和价格均须替换为真实来源内容",
+    "line_2": "咨询：请填写已获授权的联系人及电话"
+  },
+  "images": {
+    "hero": "assets/example/hero.png",
+    "aviation": ["assets/example/plane.png", "assets/example/airport.png"],
+    "attractions": ["assets/example/attraction-1.png", "assets/example/attraction-2.png"],
+    "dining": "assets/example/dining.png"
+  },
+  "palette": {"mode": "auto"}
+}

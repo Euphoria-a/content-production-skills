@@ -1,0 +1,7 @@
+interface:
+  display_name: "V4旅游长海报"
+  short_description: "Create images with the V4旅游长海报 template"
+  icon_large: "./assets/preview.png"
+  default_prompt: "Use $artifact-template-v4 to create an image with this template."
+policy:
+  allow_implicit_invocation: true

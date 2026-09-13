@@ -1,0 +1,22 @@
+{
+  "location_scope": "china",
+  "title_lines": ["示例城市", "文化行走"],
+  "subtitle": "从城市空间读懂地方记忆",
+  "guest_name": "示例嘉宾",
+  "guest_identity": "请填写材料明确支持的身份",
+  "guest_intro": ["请填写材料明确支持的履历"],
+  "core_points": ["城市空间观察", "地方文化线索"],
+  "event_time": "示例日期 示例时间",
+  "course_location": "示例会议地点",
+  "panel_theme": "dark_teal",
+  "background_sources": [
+    {
+      "source": "请替换为已授权素材路径或来源记录",
+      "element": "示例地点背景",
+      "license": "请填写授权或许可说明",
+      "usage": "主背景",
+      "contains_person": false
+    }
+  ],
+  "portrait_face_box": [360, 210, 520, 390]
+}

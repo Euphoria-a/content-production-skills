@@ -1,0 +1,95 @@
+{
+  "canvas": [1024, 1536],
+  "panel_opacity": 179,
+  "brand_box": [35, 50, 470, 112],
+  "brand_font_size": 36,
+  "title": {
+    "zone_by_line_count": {
+      "1": [80, 170, 944, 395],
+      "2": [80, 150, 944, 525]
+    },
+    "max_width": 864,
+    "font_size": 160,
+    "tracking": 4,
+    "one_line_y": [215],
+    "two_line_y": [175, 355],
+    "minimum_contrast": 3.0
+  },
+  "subtitle": {
+    "zone_by_title_line_count": {
+      "1": [132, 412, 892, 508],
+      "2": [132, 550, 892, 646]
+    },
+    "max_width": 720,
+    "font_size": 42,
+    "tracking": 2,
+    "center_y_by_title_line_count": {
+      "1": 460,
+      "2": 598
+    },
+    "minimum_title_gap": 40,
+    "allow_background_adjustment": false,
+    "dark_band_luminance": 100,
+    "maximum_dark_fraction": 0.72,
+    "maximum_neighbor_drop": 28.0,
+    "minimum_contrast": 4.5
+  },
+  "portrait": {
+    "safe_margin": 12,
+    "right_limit": 510,
+    "top_min": 580,
+    "top_max": 720,
+    "must_touch_bottom": true,
+    "maximum_coverage": 0.28,
+    "maximum_faint_alpha_fraction": 0.02,
+    "maximum_transition_alpha_fraction": 0.15,
+    "maximum_edge_color_mismatch_fraction": 0.12,
+    "face_center": [300, 770],
+    "face_center_tolerance": 20,
+    "face_height": [190, 220]
+  },
+  "info_card": {
+    "box": [522, 970, 980, 1360],
+    "inner_left": 548,
+    "inner_right": 954,
+    "heading_size": 34,
+    "body_size": 27,
+    "line_advance": 38,
+    "guest_heading_y": 990,
+    "guest_body_y": {
+      "2": [1059, 1097],
+      "3": [1040, 1078, 1116]
+    },
+    "divider_y": 1168,
+    "core_heading_y": 1182,
+    "core_body_y": {
+      "2": [1257, 1295],
+      "3": [1238, 1276, 1314]
+    }
+  },
+  "time_card": {
+    "box": [522, 1377, 980, 1498],
+    "label_x": 584,
+    "right": 954,
+    "font_size": 27,
+    "icon_x": 559,
+    "time_center_y": 1410,
+    "location_center_y": 1463
+  },
+  "background_density": {
+    "upper_zone": [0, 0, 1024, 688],
+    "minimum_luminance_stddev": 18.0,
+    "minimum_edge_mean": 2.5,
+    "top_band": [0, 0, 1024, 344],
+    "top_column_count": 4,
+    "minimum_top_column_luminance_stddev": 8.0,
+    "minimum_top_column_edge_mean": 1.0,
+    "maximum_upper_adjacent_row_difference": 20.0,
+    "maximum_upper_adjacent_column_difference": 20.0
+  },
+  "background_brightness": {
+    "mean_min": 145.0,
+    "mean_max": 200.0,
+    "quartile_min": 90.0
+  }
+}
