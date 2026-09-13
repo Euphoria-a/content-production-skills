@@ -34,7 +34,7 @@ python -m pip install Pillow
 
 This repository does not bundle the paid WenYue XinQingNianTi font, organization or personal names, phone numbers, delivery archives, or identifiable portrait examples. Do not add private or restricted material unless you have explicit redistribution and publicity rights. Noto CJK fonts may be obtained separately under their own SIL Open Font License terms.
 
-No open-source license has been selected for this repository yet. Keep the GitHub repository private until the owner chooses a license and confirms that the remaining templates, examples, and source images may be published.
+This public repository is provided as a portfolio demonstration. No open-source license has been selected, so no permission is granted to reuse or redistribute the repository contents.
 
 ## Validation
 

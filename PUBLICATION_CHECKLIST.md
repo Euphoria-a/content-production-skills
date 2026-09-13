@@ -18,12 +18,12 @@
 - Image-rendering entry points load successfully.
 - `artifact-template-v4` renders a sanitized 1080x2568 reference and preview.
 
-## Before making the GitHub repository public
+## Public-release maintenance
 
-- Choose an open-source or proprietary license.
+- Choose an open-source or proprietary license before granting reuse rights.
 - Confirm permission to publish the generalized workflow rules, templates, examples, and source-image requirements.
 - Keep user-supplied fonts, portraits, contact details, credentials, and customer source files outside the repository.
 - Recheck third-party provider endpoints and model identifiers against current official documentation before enabling them.
 - Repeat the secret/path scan and test suite immediately before the first public release.
 
-Until those owner decisions are complete, create the GitHub repository as **Private**.
+The repository may remain public for portfolio viewing while reuse and redistribution remain unlicensed.
