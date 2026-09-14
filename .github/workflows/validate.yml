@@ -1,0 +1,32 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+      - name: Validate repository contracts
+        run: python tools/validate_repo.py
+      - name: Run automated tests
+        run: python tools/run_tests.py

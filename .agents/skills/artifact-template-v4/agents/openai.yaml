@@ -1,7 +1,7 @@
 interface:
   display_name: "V4旅游长海报"
-  short_description: "Create images with the V4旅游长海报 template"
+  short_description: "将旅行资料按字段契约渲染为固定版式并可审计的中文长海报"
   icon_large: "./assets/preview.png"
-  default_prompt: "Use $artifact-template-v4 to create an image with this template."
+  default_prompt: "使用 $artifact-template-v4 将这份旅行资料转换为经过字段核验和视觉检查的 V4 长海报。"
 policy:
   allow_implicit_invocation: true

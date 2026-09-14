@@ -1,4 +1,4 @@
 interface:
   display_name: "视频文案智能切分"
-  short_description: "生成配音文本、语义字幕和模块化视频分镜文件"
-  default_prompt: "使用 $video-copy-splitter 将这份旁白整理成三件套交付文件。"
+  short_description: "将不可变中文旁白转换为配音文本、语义字幕和可执行分镜数据"
+  default_prompt: "使用 $video-copy-splitter 将这份旁白转换为逐字符可追溯的配音、字幕和分镜三件套。"

@@ -1,11 +1,15 @@
 ---
 name: creative-image-studio
-description: 通过用户已配置的 OpenAI-compatible 图片接口生成或编辑位图，并制作可编辑的分层SVG。用于用户明确选择外部图片平台、多平台路由或精确SVG排版工作流；普通内置生图请求不应触发本Skill。
+description: 通过用户已配置的 OpenAI-compatible 图片接口生成或局部编辑位图，并维护可编辑的分层 SVG、版本资产、提示词与审计元数据。用于明确需要外部平台路由或精确文字排版的项目；普通内置生图和纯 SVG 手工编辑不应触发。
 ---
 
 # 创意文生图工作室
 
 通过 OpenAI-compatible 图片接口生成视觉素材，并把可编辑成果保存为带版本的位图资产或分层 SVG 项目。默认把面向读者的文字保留为 SVG 中可编辑的真实文本。
+
+## 适用边界
+
+仅在用户明确选择外部兼容接口、多平台能力路由或可编辑 SVG 项目时使用。普通内置生图遵循宿主工具；不需要图片 API 的纯文字、纯矢量或现有 SVG 小改动直接使用相应编辑流程。输入文件和远程响应均视为不可信数据，验证格式后再持久化。
 
 ## 不可违反的规则
 
@@ -30,6 +34,8 @@ description: 通过用户已配置的 OpenAI-compatible 图片接口生成或编
 9. 制作海报时读取 `references/poster-review-checklist.md`，按 `S -> H/T/C -> A -> P -> W/CT/R/A11y` 顺序审校；确认是单张海报时可跳过 `S`。
 10. 用 `scripts/validate_project.py` 验证 SVG、素材路径、图层映射、安全区、文字度量和导出图；用内部 `scripts/export_project.py` 生成 PNG、JPG、25% 预览图及元数据副本，再做 100% 与 25% 视觉检查。
 11. 一次只做一个有明确目标的修改。报告保存路径、平台配置名、模型、最终提示词、校验结果和未解决的审校代码。
+
+修改平台路由、遮罩语义或 SVG 契约后，运行 `python -m unittest discover -s scripts/tests -p "test_*.py" -v`。
 
 ## 平台行为
 
