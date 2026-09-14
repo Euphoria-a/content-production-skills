@@ -6,14 +6,6 @@
 
 这个仓库不只是提示词集合。每个复杂工作流都把“模型判断”和“确定性机制”分开：Skill 负责意图、边界和路由；Python 负责字段校验、哈希、事务、排版或可重复测试。
 
-## 建议优先查看
-
-1. [creative-image-studio](.agents/skills/creative-image-studio/SKILL.md)：多平台能力路由、密钥脱敏、生成/编辑请求、遮罩外像素锁定、分层 SVG 和 13 项测试。
-2. [video-copy-splitter](.agents/skills/video-copy-splitter/SKILL.md)：不可变文本模型、读音替换隔离、语义字幕、原子目录事务和 53 项测试。
-3. [create-public-course-poster](.agents/skills/create-public-course-poster/SKILL.md)：授权素材约束、人物真实性、量化版式校验、审计报告和独立验证器。
-
-完整的面试阅读顺序、每个 Skill 的优势与局限见 [PORTFOLIO_GUIDE.md](PORTFOLIO_GUIDE.md)。
-
 ## 六个 Skills
 
 | Skill | 解决的问题 | 工程化证据 |
@@ -71,6 +63,6 @@
 
 ## 隐私与许可
 
-这是用于作品集展示的公开仓库。仓库不包含真实机构或个人标识、联系电话、客户交付档案、API Key、付费字体文件或真实人物示例。
+这是经过脱敏整理的公开版本。仓库不包含真实机构或个人标识、联系电话、客户交付档案、API Key、付费字体文件或真实人物示例。
 
 当前未授予开源复用或再分发许可。第三方字体和图片仍受各自许可约束。
